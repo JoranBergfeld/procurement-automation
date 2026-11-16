@@ -4,6 +4,9 @@ The terms used to assess the value of agent-to-agent public procurement.
 
 ## Language
 
+**No-agent counterfactual**:
+The procurement system and outcomes expected without the agent-to-agent programme, against which programme costs and benefits are assessed.
+
 **Government financial view**:
 A perspective on procurement programme costs and benefits that accrue to government bodies. It excludes benefits that accrue only to suppliers.
 
