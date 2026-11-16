@@ -13,6 +13,9 @@ Procurement-officer time made available when procurement work requires less huma
 **Realised cash saving**:
 Government spending demonstrably reduced or avoided relative to the no-agent counterfactual.
 
+**Contract-price saving**:
+A reduction in what a public buyer pays relative to the no-agent counterfactual, adjusted for quantity and quality. It can be a transfer from suppliers rather than an economy-wide gain.
+
 **Government financial view**:
 A perspective on procurement programme costs and benefits that accrue to government bodies. It excludes benefits that accrue only to suppliers.
 
