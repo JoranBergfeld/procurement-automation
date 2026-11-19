@@ -40,3 +40,6 @@ The recorded set of rules and bounds within which a permitted negotiation may ta
 
 **Guardrail**:
 A measure showing whether procurement is carried out safely and fairly, as opposed to a measure of speed or effort.
+
+**Human escalation**:
+A procurement matter referred to an authorised person for a decision, with a recorded reason and visible status.
