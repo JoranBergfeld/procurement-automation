@@ -40,3 +40,12 @@ The recorded set of rules and bounds within which a permitted negotiation may ta
 
 **Guardrail**:
 A measure showing whether procurement is carried out safely and fairly, as opposed to a measure of speed or effort.
+
+**Audit record**:
+The applicable, attributable evidence of what happened and what decisions were taken in a procurement or call-off.
+
+**Measurement coverage**:
+The extent to which the observations needed for a KPI are available across its applicable population.
+
+**Supplier-agent intervention**:
+A human action needed to unblock, correct, or take over a supplier-agent response, distinct from ordinary planned review or approval.
