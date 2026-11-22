@@ -13,7 +13,7 @@ FY27 Cohort 2 · Agentic Case Study Compendium · Case 16
 
 ## Business Challenge
 
-Estonia's central procurement agency runs 25,000 procedures a year on behalf of ministries and municipalities. Below-threshold purchases and framework call-offs still involve manual requests for quotes, clarification rounds and evaluation. Suppliers, especially SMEs, find responding costly. The government wants to pilot machine-readable procurement where buyer and supplier agents negotiate within legally defined parameters.
+Estonia reported 9,137 published procurements nationwide in 2025. Below-threshold purchases and framework call-offs are distinct workflows, with different coverage and legal constraints. The proposed system explores machine-readable procurement where buyer and supplier agents support permitted work within legally defined parameters. Whether this reduces effort or attracts more SME participation remains to be tested.
 
 ## Transformation Objective
 
@@ -35,7 +35,7 @@ Create a framework in which a government buying agent publishes structured requi
 
 ## Expected Outcomes
 
-Procedure cycle time down 60% for below-threshold buys, SME participation up, evaluation disputes down, and a reusable open protocol for EU procurement.
+The hypothesis is that agent assistance can reduce buyer effort and, for published tenders, time to signature versus post-reform procurement without agents, while meeting procurement safeguards. These are outcomes to measure, not promised reductions. SME participation, competition and disputes are tracked separately; no numeric improvement is assumed.
 
 ## Why Now (2026–2028)
 
@@ -43,9 +43,11 @@ The Interoperable Europe Act (in force since April 2024) mandates interoperabili
 
 ## Business Case
 
-*Procurement is 15% of GDP; even a 2% efficiency gain on below-threshold spend exceeds the programme cost many times.*
+The OECD reports public procurement at 15.3% of Estonia's GDP in 2023. This is historical context, not the programme's eligible spend or an estimate of agent benefits. The claim that a 2% efficiency gain would exceed EUR 30 million a year is not established.
 
-**Value at stake:** public procurement is 15% of Estonian GDP; a 2% efficiency gain on below-threshold spend alone exceeds EUR 30 million a year, and higher SME participation improves price competition. **Cost of inaction:** SMEs are dropping out of public tenders because of response cost, and procurement officers spend most of their time on clarification rounds. **Executive sponsor:** Director of the Centre of Registers and Information Systems, with the Ministry of Finance. **Success measures:** procedure cycle time, SME participation rate, evaluation disputes, and cost per procedure.
+The current value model is a planning thesis, not a validated national investment case. It compares agent-assisted work with post-reform procurement without agents. Its in-scope streams are buyer productivity, publication-to-signature time for published tenders, and specifically evidenced public cost savings. Officer time freed is capacity, not cash. Contract prices may be measured and analysed, but projected purchase-price savings are excluded. The 20%, 35% and 50% effort cases and three-, five- and seven-year adoption paths are unweighted planning scenarios, not forecasts.
+
+Programme costs, payback and NPV are not yet established. The sponsor and audience are to be confirmed; the Centre of Registers and Information Systems is not the procurement authority. See the [current business-case model and evidence](business-case-model.md) for the decisions, assumptions, sources and model status.
 
 **Capstone artifact:** alongside the architecture, produce one thought-leadership artifact — a patent disclosure, a white paper, a reference architecture, or a recorded podcast episode. Confirm your choice with your mentor by week three.
 
