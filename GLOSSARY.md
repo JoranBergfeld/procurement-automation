@@ -4,6 +4,12 @@ The terms used to assess the value of agent-to-agent public procurement.
 
 ## Language
 
+**Buying entity**:
+A public organisation, such as a municipality, that conducts procurements on the shared platform.
+
+**Entity role**:
+A responsibility held by a person in a buying entity that helps determine what they may do or view within that entity.
+
 **No-agent counterfactual**:
 The procurement system and outcomes expected without the agent-to-agent programme, against which programme costs and benefits are assessed.
 
