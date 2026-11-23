@@ -50,5 +50,8 @@ The applicable, attributable evidence of what happened and what decisions were t
 **Measurement coverage**:
 The extent to which the observations needed for a KPI are available across its applicable population.
 
+**Supplier agent**:
+An agent acting on behalf of a prospective supplier in a procurement, under the supplier's control rather than the public buyer's.
+
 **Supplier-agent intervention**:
 A human action needed to unblock, correct, or take over a supplier-agent response, distinct from ordinary planned review or approval.
