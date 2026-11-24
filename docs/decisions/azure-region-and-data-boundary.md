@@ -10,11 +10,24 @@
 - A documented support-access or operational-metadata exception may be accepted only with an explicit record of why it is necessary, what data and purpose are involved, how exposure is minimized, and who reviewed and approved it.
 - Use **EU Data Zone Standard** with **GPT-6.1 Sol**, version `2026-09-29`, as an initial inference candidate. This is conditional on model-specific residency, quota, security and cost qualification.
 - Evaluate and approve model-version changes before use. Verify that the deployment can enforce this; an unavoidable automatic change is a qualification gap.
-- Prefer in-region redundancy where available, while allowing required service-managed replication to Sweden South. A separate disaster-recovery strategy remains open.
-- Plan a separately qualified recovery region within the EU Data Boundary. Exact service-level agreements and objectives will be discussed after they are identified; the recovery mechanism is not yet specified.
+- Prefer in-region redundancy where available. Identify required service-managed pairs, then select the recovery region only after the service inventory and regional availability are qualified.
+- Plan a separate recovery region within the EU Data Boundary. Discuss service-level agreements and objectives after feasible service and region options are known; no recovery region or pair has been selected.
 - Keep prompts, responses and bid content out of operational logs by default. Preserve required evidence in its designated store under applicable retention rules.
 - Plan the demonstration in the user's own tenant. This does not establish that the tenant, its home region or its service configurations meet the required controls.
 - Use available public procurement data for the demonstration where appropriate, and synthetic data when needed. Review source permissions, privacy and handling requirements even for public data. A possible future synthetic generator could create a municipality's procurement and multiple fictional supplier bids; its design remains open.
+
+## Provisional service inventory
+
+The user approved this inventory for qualification before choosing region pairs. Listing a service does not confirm its regional availability, SKU, capacity or readiness in the demonstration tenant.
+
+| Role | Services and qualification |
+| --- | --- |
+| Core runtime | Azure Container Apps (ACA) in Sweden Central for agent workers, orchestration and the X-Road adapter; Microsoft Foundry for inference. |
+| Workflow and evidence | Azure SQL Database with SQL Ledger for workflow state and accepted events; immutable Azure Blob Storage for required procurement evidence. |
+| Measurement | Microsoft Fabric for KPI/event analytics, conditional on verifying the tenant home region is within the EU Data Boundary. Bid content stays out of analytics. |
+| Ledger digests | Azure Confidential Ledger is conditional on regional availability and qualification; immutable Blob Storage is the documented alternative. |
+| Supporting infrastructure | A custom VNet and private routing/DNS to the government X-Road Security Server; Azure Container Registry (candidate); Key Vault; Azure Monitor/Log Analytics for content-free operational telemetry; Entra identity and managed identities. Qualify each selected component and its data/replication boundary. |
+| Demonstration application | If built, the synthetic-scenario generator is application functionality hosted in ACA, not a separate Azure service. |
 
 ## Context and rationale
 
@@ -42,7 +55,7 @@ Container Apps, SQL, Fabric, storage, networking and monitoring can add material
 - Check each selected service's actual processing, storage, replication, backup, diagnostics and support-data locations; a Sweden Central resource label alone does not establish the end-to-end boundary.
 - Confirm service and model availability, deployment type, quota, network connectivity and capacity before deployment. Compare the candidate's cost and performance with alternatives using representative workloads; its cost-effectiveness is not established.
 - Qualify demonstration data sources and, if needed, decide how to generate synthetic buyer and supplier scenarios.
-- Qualify the separate recovery region and decide the recovery mechanism, service-level objectives, backup configuration and any service-managed use of Sweden South.
+- Qualify every service in the provisional inventory, including service-managed replication and available regional SKUs. Select region pairs only after this inventory is stable; decide the recovery mechanism and service-level objectives after feasible options are known.
 - Check the demonstration tenant's home region, service configuration and governance against the chosen boundary and security requirements. The demonstration does not itself establish production readiness.
 - Identify and review documented transfers, remote access and metadata exceptions with the appropriate legal and security owners. The geographic decision does not itself approve exceptions or establish compliance.
 - Global inference remains excluded.
