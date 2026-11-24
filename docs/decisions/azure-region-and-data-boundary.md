@@ -9,7 +9,9 @@
 - A single primary region does not imply that every service stores or processes all data only in that region. Service-managed replication and processing locations must be identified and assessed against the chosen boundary.
 - Use **EU Data Zone Standard** as the initial inference candidate, subject to model-specific residency, quota and security qualification. The model and version remain undecided.
 - Prefer in-region redundancy where available, while allowing required service-managed replication to Sweden South. A separate disaster-recovery strategy remains open.
+- Plan a separately qualified recovery region within the EU Data Boundary. Exact service-level agreements and objectives will be discussed after they are identified; the recovery mechanism is not yet specified.
 - Keep prompts, responses and bid content out of operational logs by default. Preserve required evidence in its designated store under applicable retention rules.
+- Plan the demonstration in the user's own tenant. This does not establish that the tenant, its home region or its service configurations meet the required controls.
 
 ## Context and rationale
 
@@ -23,7 +25,8 @@ Microsoft lists Sweden South, a restricted-access region in Sweden, as Sweden Ce
 
 - Check each selected service's actual processing, storage, replication, backup, diagnostics and support-data locations; a Sweden Central resource label alone does not establish the end-to-end boundary.
 - Confirm service and model availability, version, deployment type, SKU, quota, network connectivity and capacity before deployment. No specific model or version has been selected.
-- Decide the acceptable resilience, backup and recovery configuration, including any service-managed use of Sweden South.
+- Qualify the separate recovery region and decide the recovery mechanism, service-level objectives, backup configuration and any service-managed use of Sweden South.
+- Check the demonstration tenant's home region, service configuration and governance against the chosen boundary and security requirements. The demonstration does not itself establish production readiness.
 - Identify and review documented transfers, remote access and metadata exceptions with the appropriate legal and security owners. The geographic decision does not itself approve exceptions or establish compliance.
 - The previously agreed exclusion of Global inference and the modified abuse-monitoring requirement remain in force unless separately changed.
 
