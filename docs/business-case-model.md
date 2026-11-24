@@ -34,6 +34,7 @@ Programme-specific costs, the controlled implementation budget, eligible-populat
 
 ## Related context
 
+- [Assumptions register](assumptions/README.md)
 - [Decision map](https://github.com/JoranBergfeld/procurement-automation/issues/1)
 - [Value model decision](https://github.com/JoranBergfeld/procurement-automation/issues/7)
 - [Planning model decision](https://github.com/JoranBergfeld/procurement-automation/issues/9)
