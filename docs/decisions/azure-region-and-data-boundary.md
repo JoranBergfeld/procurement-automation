@@ -7,6 +7,7 @@
 - Use **Sweden Central** as the single primary Azure region for the procurement platform.
 - The acceptable geographic boundary for procurement content is the **EU Data Boundary**, including EU and EFTA countries. This supersedes the earlier EU-member-states-only planning restriction in the [Azure agent platform decision](https://github.com/JoranBergfeld/procurement-automation/issues/18).
 - A single primary region does not imply that every service stores or processes all data only in that region. Service-managed replication and processing locations must be identified and assessed against the chosen boundary.
+- A documented support-access or operational-metadata exception may be accepted only with an explicit record of why it is necessary, what data and purpose are involved, how exposure is minimized, and who reviewed and approved it.
 - Use **EU Data Zone Standard** with **GPT-6.1 Sol**, version `2026-09-29`, as an initial inference candidate. This is conditional on model-specific residency, quota, security and cost qualification.
 - Evaluate and approve model-version changes before use. Verify that the deployment can enforce this; an unavoidable automatic change is a qualification gap.
 - Prefer in-region redundancy where available, while allowing required service-managed replication to Sweden South. A separate disaster-recovery strategy remains open.
