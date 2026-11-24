@@ -31,7 +31,13 @@
 
 ## 3. ACA supported EU regions
 
-**Observed provider metadata (2026-11-24, run by the parent, no subscription identifiers recorded here).** The owning command from the [ACA FAQ](https://learn.microsoft.com/en-us/azure/container-apps/faq) is `az provider show --namespace Microsoft.App --query "resourceTypes[?resourceType=='managedEnvironments'].locations"`. It returned these EU locations for `Microsoft.App/managedEnvironments`:
+**Observed provider metadata.** The command comes from the [ACA FAQ](https://learn.microsoft.com/en-us/azure/container-apps/faq). The research session that wrote this report (the `research/aca-eu-xroad` worktree session) ran it on 2026-11-24 at about 17:57 CET (UTC+1), using Azure CLI under its existing `az login` context:
+
+```
+az provider show --namespace Microsoft.App --query "resourceTypes[?resourceType=='managedEnvironments'].locations" --output json --only-show-errors
+```
+
+The command exited with code 0. No subscription or tenant identifiers are recorded here. It returned these EU locations for `Microsoft.App/managedEnvironments`:
 
 | Region | Notes |
 |---|---|
@@ -158,7 +164,7 @@ The ACA pages I read do not list a service-specific platform-metadata or support
 | 2 | ExpressRoute unsupported on consumption-only; supported on workload profiles | Verified | ACA FAQ |
 | 3 | Peering gateway transit and VPN/ExpressRoute building blocks exist | Verified | VNet peering, VPN Gateway, ExpressRoute |
 | 4 | An ACA to on-premises walkthrough exists | Not found; customer validation, not unsupported | n/a |
-| 5 | 12 EU ACA regions returned; Denmark East did not | Observed ARM metadata, 2026-11-24 | FAQ command run by parent |
+| 5 | 12 EU ACA regions returned; Denmark East did not | Observed ARM metadata, 2026-11-24 | FAQ command, executed by the research session (section 3) |
 | 6 | ACA data stays in region / Geo | Vendor statement, no enumerated ACA exceptions | FAQ, residency page |
 | 7 | Foundry Global can process anywhere | Verified | Deployment types, data privacy |
 | 8 | EU Data Zone is EU-only | **Conflicting** (EU+EFTA vs EU) | Section 2 |
