@@ -23,6 +23,19 @@ Microsoft defines the EU Data Boundary to include EU and EFTA countries and docu
 
 Microsoft lists Sweden South, a restricted-access region in Sweden, as Sweden Central's paired region. Azure Confidential Ledger automatically replicates to the paired region and cannot be configured to stay in a single region. Availability of that service in the selected region and the implications for access, failover and residency still need qualification.
 
+## Cost evidence
+
+Microsoft's retail pricing API, queried on 2026-11-24 with `serviceName eq 'Foundry Models'`, `armRegionName eq 'swedencentral'` and `productName eq 'Azure OpenAI GPT6'`, lists the following Sweden Central Data Zone Standard short-context token meters in USD per million tokens. Actual charges can differ by agreement, currency and usage; long-context and cached-token meters differ.
+
+| Model | Input | Output |
+| --- | ---: | ---: |
+| GPT-6.1 Sol | $2.40 | $12.00 |
+| GPT-6 Luna | $0.12 | $0.60 |
+
+For illustration only, 100 demonstration runs with five calls each, 3,000 input tokens and 1,000 output tokens per call, and no caching would cost about $9.00 for Sol or $0.48 for Luna in model inference. This excludes retries, other models, long-context rates, taxes and all infrastructure costs. It is not a forecast or an assertion that the models are equally capable.
+
+Container Apps, SQL, Fabric, storage, networking and monitoring can add material costs, including while a demonstration is idle. Azure budget alerts do not by themselves stop consumption. Determine expected usage, service SKUs, running hours and suitable spending controls before deployment.
+
 ## Consequences and open questions
 
 - Check each selected service's actual processing, storage, replication, backup, diagnostics and support-data locations; a Sweden Central resource label alone does not establish the end-to-end boundary.
@@ -40,3 +53,4 @@ Microsoft lists Sweden South, a restricted-access region in Sweden, as Sweden Ce
 - [Azure ACA connectivity and EU data-residency boundaries for X-Road](https://github.com/JoranBergfeld/procurement-automation/issues/22) - prior research and qualification limits.
 - Microsoft documentation, accessed 2026-11-24: [EU Data Boundary](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn), [Foundry deployment types](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/deployment-types), [Azure region pairs](https://learn.microsoft.com/en-us/azure/reliability/regions-paired), and [Azure Confidential Ledger data residency](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-residency).
 - Microsoft documentation, accessed 2026-11-24: [Foundry model availability](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability), [model lifecycle and automatic upgrades](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements), and [abuse monitoring](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/abuse-monitoring).
+- Microsoft documentation and data, accessed 2026-11-24: [Azure Retail Prices API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices) (Foundry Models, Sweden Central, Data Zone Standard short-context meters) and [Azure budget alerts](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
