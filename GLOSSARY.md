@@ -56,8 +56,14 @@ The applicable, attributable evidence of what happened and what decisions were t
 **Measurement coverage**:
 The extent to which the observations needed for a KPI are available across its applicable population.
 
+**X-Road member**:
+A person or organisation that has formally joined X-Road. This is distinct from an external end user whose access is mediated by an X-Road member.
+
 **Supplier agent**:
 An agent acting on behalf of a prospective supplier in a procurement, under the supplier's control rather than the public buyer's.
 
 **Supplier-agent intervention**:
 A human action needed to unblock, correct, or take over a supplier-agent response, distinct from ordinary planned review or approval.
+
+**Agent run**:
+A bounded, versioned task an agent performs for one procurement. Approval authorises that task; retries or continuation remain within the approval only while material inputs, policy, and authority are unchanged. A new task or material change requires fresh approval.
