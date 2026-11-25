@@ -52,3 +52,9 @@ The extent to which the observations needed for a KPI are available across its a
 
 **Supplier-agent intervention**:
 A human action needed to unblock, correct, or take over a supplier-agent response, distinct from ordinary planned review or approval.
+
+**Agent qualification**:
+An evidence-backed determination that a specified procurement-agent configuration meets its applicable reliability requirements. It does not replace human procurement authority or operational guardrails.
+
+**Reliability regression**:
+A deterioration in a procurement agent's demonstrated reliability compared with a qualified baseline under comparable conditions.
